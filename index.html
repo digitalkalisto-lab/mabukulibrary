@@ -12,9 +12,9 @@ y{border:1px solid lightgrey;}
   font-family: 'Aller_Rg';       /* Name you’ll use in CSS */
   src: url('fonts/Aller_Rg.ttf')
 }
-body {font-family:'Aller_Rg';}
-#h3 {text-align:center; text-align:left;}
-table {width:100%;}
+body {font-family:'Aller_Rg'; padding-left:5px;}
+#h3 {text-align:center; text-align:left; color:#fff;}
+table {width:100%; border-collapse: collapse;}
 a {text-decoration:none;}
 .thead { font-weight:bold; background: #2D5D66; color:#fff; text-align:center; font-size:small;}
 .col1 {width:15%;}
@@ -43,7 +43,17 @@ a {text-decoration:none;}
 #sp2 {position:relative; left:10px; opacity:0.8;}
 #f1 {opacity:0.3;}
 #f2 {position:relative; top:-21px; left:8px; opacity:0.6; font-size:x-large;}
-#hidden {display: g;}
+#hidden {display:;}
+#tr1 {background-size:cover;
+	background-image:url('images/books_background_2.jpg');
+	background-color: rgba(45, 93, 102, 0.75); /* White at 60% opacity */
+	background-blend-mode:multiply; /* Blends the color with the image */
+}
+#td1 {
+  text-align: center;
+  vertical-align: middle; /* Optional: centers it vertically too */
+  width:3em;
+}
 </style>
 <title></title>
 	<meta charset="utf-8">
@@ -51,8 +61,8 @@ a {text-decoration:none;}
 </head>
 <body>
 	<table>
-		<tr>
-			<td><img style="width:3em; height:3mem;"  src="images/screenshot1.jpg" ></td>
+		<tr id="tr1" style="" >
+			<td id="td1" ><img style="width:1.8em; height:3mem;"  src="images/mabuku_logo.png" ></td>
 			<td><h3 id="h3">MABUKU LIBRARY APP</h3></td>
 		</tr>
 		<tr>
@@ -109,9 +119,9 @@ a {text-decoration:none;}
 		</tr>
 		<tr>
 			<td></td>
-			<td>
+			<td style="padding-bottom:10px;" >
 			<!--				<img id="div2" src="/storage/sdcard0/Pictures/DigitalKalistoLogo.jpg">-->
-				<a href="https://apkpure.com/mabuku-library/com.digitalkalisto.mabukulibrary" ><div id="div7" style="color:#fff;"><div id="icon1"  class="fa fa-download"></div>Download the App</div></a>
+				<a href="https://www.dropbox.com/scl/fi/f3899yw0epm2beeprc4vy/mabuku_library_1.0.7.apk?rlkey=vk5oom7f1bmfyjkjjqmriwrl3&st=1l3jc4lc&dl=1" ><div id="div7" style="color:#fff;"><div id="icon1"  class="fa fa-download"></div>Download the App (8.9 Mbs)</div></a>
 			</td>
 			<td></td>
 		</tr>
@@ -124,12 +134,12 @@ a {text-decoration:none;}
 		</tr>
 		<tr>
 			<td><div class="fa fa-envelope-o"></div> </td>
-			<td>digitalkalisto@gmail.com</td>
+			<td>mabukulibrary@gmail.com</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td><div class="fa fa-facebook-f"></div></td>
-			<td>Digital Kalisto</td>
+			<td>Mabuku Library App </td>
 			<td></td>
 		</tr>
 		<tr>
@@ -140,7 +150,7 @@ a {text-decoration:none;}
 
 	</table>
 	<footer style="margin-top: 20px; font-size:small; text-align: center; background:#000; color:#fff;">
-		<p>© 2025 MabukuLibrary
+		<p>© 2026 MabukuLibrary
 		<br>Developed by Kalisto Mkhwapa</p>
 	</footer>
 <script type="text/javascript">
