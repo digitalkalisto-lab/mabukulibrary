@@ -12,7 +12,7 @@ y{border:1px solid lightgrey;}
   font-family: 'Aller_Rg';       /* Name you’ll use in CSS */
   src: url('fonts/Aller_Rg.ttf')
 }
-body {font-family:'Aller_Rg'; padding-left:5px;}
+body {font-family:'Aller_Rg'; margin:0;}
 #h3 {text-align:center; text-align:left; color:#fff;}
 table {width:100%; border-collapse: collapse;}
 a {text-decoration:none;}
@@ -21,13 +21,14 @@ a {text-decoration:none;}
 .small {font-size:x-small;} 
 .center {text-align:center;}
 #gap {font-size:x-small; color:#fff;}
-.borderbottom {border-bottom:1px solid powderblue;}
+.borderbottom {border-bottom:1px solid powderblue; margin-right:15px;}
 #div1 {width:2em; height:2em; background:black; color:#fff; }
 #icon1 {margin:0.5em;}
 #div2 {width:2em; height:2em; background:darkgreen;}
 #icon2 {margin:0.5em;}
 #div3 {width:2em; height:2em; background:black; color:#fff; text-align:right;}
-#div4 {width:2em; height:2em; background:#4ABBCC; color:#fff; font-family:Courier new,monospace; font-weight:bold;}
+.div4 {width:2em; height:2em; background:#4ABBCC; color:#fff; font-family:Courier new,monospace; font-weight:bold;
+	overflow:hidden;}
 #div5 {width:2em; height:2em; background:Orange;}
 #div6 {width:2em; height:2em; background:black;}
 #div5b  {width:1em; height:1em; border-radius:50px; background:#fff;}
@@ -54,6 +55,9 @@ a {text-decoration:none;}
   vertical-align: middle; /* Optional: centers it vertically too */
   width:3em;
 }
+.pad10 {padding-left:10px;}
+.blank {width:10px;}
+.large {font-size:large;}
 </style>
 <title></title>
 	<meta charset="utf-8">
@@ -66,7 +70,7 @@ a {text-decoration:none;}
 			<td><h3 id="h3">MABUKU LIBRARY APP</h3></td>
 		</tr>
 		<tr>
-			<td colspan="3" >
+			<td colspan="3" style="padding:15px;" >
 				MabukuLibrary is a Malawian Android Application, where you can read and download Books, Pamphlets, Pastpapers and other Education Resources
 			</td>
 		</tr>
@@ -76,34 +80,69 @@ a {text-decoration:none;}
 			<td colspan="3" >Features</td>
 		</tr>
 		<tr>
+			<td class="blank"></td>
 			<td class="col1">
-				<div id="div1"><div id="icon1"  class="fa fa-download"></div> </div>
+				<div class="div4"><div id="icon1"  class="fa fa-download large"></div> </div>
 			</td>
-			<td>Download Files</td>
+			<td class="borderbottom" >Downloadable Files</td>
 			<td>
 				<div class="msg"></div>
 			</td>
 		</tr>
 		<tr>
+			<td class="blank"></td>
 			<td>
-				<div id="div2">
+				<div class="div4">
 					<span id="sp2">
 						<svg width="2em" height="2em" style="background:;">
-							<circle cx="0.9em" cy="0.5em" r="0.5em" style="stroke:#fff; stroke-width:2px; fill:#682a2a;"></circle>
+							<circle cx="0.9em" cy="0.5em" r="0.5em" style="stroke:#fff; stroke-width:2px; fill:#4ABBCC;"></circle>
 							<circle cx="0.4em" cy="1.4em" r="0.2em" style="stroke:#fff; stroke-width:2px; fill:#fff;"></circle>
 						</svg>
 					</span>
 <!--			<img id="div2"  src="/storage/sdcard0/Download/Tomato.jpg" >-->
 				</div></td>
-			<td>Wide variety of materials</td>
+			<td class="borderbottom" >Wide variety of materials</td>
 			<td>
 <!--				<img class="msg" src="Resources/message.png">-->
 				<div class="msg"></div>
 			</td>
 		</tr>
 		<tr>
-			<td><div id="div4"><div id="icon2"  class="fa fa-file-pdf-o"></div> </div></td>
+			<td class="blank"></td>
+			<td><div class="div4"><div id="icon2"  class="fa fa-file-pdf-o large"></div> </div></td>
 			<td class="borderbottom">Offline reading</td>
+			<td>
+				<div class="msg"></div>
+			</td>
+		</tr>
+		<tr>
+			<td class="blank"></td>
+			<td><div class="div4"><div id="icon2"  class="fa fa-android" style="font-size:45px; position:relative; left:-15px; top:-15px;" ></div> </div></td>
+			<td class="borderbottom">Compatible: Android 5+</td>
+			<td>
+				<div class="msg"></div>
+			</td>
+		</tr>
+		<tr>
+			<td class="blank"></td>
+			<td><div class="div4"><div id="icon2"  class="fa fa-file-o"></div>
+				    <div style="border:; position:relative;
+				    	height:10px; width:15px; 
+				    	top:-18px; left:14px; overflow:hidden;">
+					    <div style="font-size:30px; position:relative; top:0px; left:-5px;" 
+						    class="fa fa-android">
+					    </div>
+				    </div>
+			    </div></td>
+			<td class="borderbottom">Apk file size: 8.9 Mbs</td>
+			<td>
+				<div class="msg"></div>
+			</td>
+		</tr>
+		<tr>
+			<td class="blank"></td>
+			<td><div class="div4"><div id="icon2"  class="fa fa-wpforms large"></div> </div></td>
+			<td class="borderbottom">Latest Version: 1.0.7</td>
 			<td>
 				<div class="msg"></div>
 			</td>
@@ -123,7 +162,9 @@ a {text-decoration:none;}
 			<!--				<img id="div2" src="/storage/sdcard0/Pictures/DigitalKalistoLogo.jpg">-->
 				<a href="https://www.dropbox.com/scl/fi/f3899yw0epm2beeprc4vy/mabuku_library_1.0.7.apk?rlkey=vk5oom7f1bmfyjkjjqmriwrl3&st=1l3jc4lc&dl=1" ><div id="div7" style="color:#fff;"><div id="icon1"  class="fa fa-download"></div>Download the App (8.9 Mbs)</div></a>
 			</td>
-			<td></td>
+		</tr>
+		<tr>
+			<td style="visibility:hidden;">.</td>
 		</tr>
 
 	</table>
@@ -133,16 +174,19 @@ a {text-decoration:none;}
 			<td colspan="3">Contact Us</td>
 		</tr>
 		<tr>
+			<td class="blank"></td>
 			<td><div class="fa fa-envelope-o"></div> </td>
 			<td>mabukulibrary@gmail.com</td>
 			<td></td>
 		</tr>
 		<tr>
+			<td class="blank"></td>
 			<td><div class="fa fa-facebook-f"></div></td>
 			<td>Mabuku Library App </td>
 			<td></td>
 		</tr>
 		<tr>
+			<td class="blank"></td>
 			<td><div class="fa fa-whatsapp"></div></td>
 			<td>+265 998 44 09 89</td>
 			<td></td>
